@@ -1,0 +1,15 @@
+mvn archetype:create -DgroupId=info.lotharschulz -DartifactId=readImageMetadata -Dversion=1.0-SNAPSHOT
+
+download http://metadata-extractor.googlecode.com/files/metadata-extractor-2.5.0-RC3.zip in subfolder libs
+extract zip file in ./libs/metadata-extractor-2.5.0-RC3
+make sure the required files are present:
+
+./libs/metadata-extractor-2.5.0-RC3/metadata-extractor-2.5.0-RC3.jar
+./libs/metadata-extractor-2.5.0-RC3/xmpcore.jar
+
+
+mvn install:install-file -Dfile=./libs/metadata-extractor-2.5.0-RC3/metadata-extractor-2.5.0-RC3.jar -DgroupId=com.google.code -DartifactId=metadata-extractor -Dversion=2.5.0-RC3 -Dpackaging=jar
+mvn install:install-file -Dfile=./libs/metadata-extractor-2.5.0-RC3/xmpcore.jar -DgroupId=com.google.code -DartifactId=xmpcore -Dversion=2.5.0-RC3 -Dpackaging=jar
+
+mvn clean install
+mvn exec:java -Dexec.mainClass="info.lotharschulz.App"

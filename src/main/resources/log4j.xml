@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%-4r [%t] %-5p %c %x - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="RFA" class="org.apache.log4j.RollingFileAppender">
+    <param name="file" value="logs/readImageMetadataReader.log"/>
+    <param name="MaxFileSize" value="1000KB"/>
+    <param name="MaxBackupIndex" value="1"/>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%p %t  %l %d{HH:mm:ss,SSS} - %m%n"/>
+    </layout>
+  </appender>
+  <root>
+    <priority value="debug" />
+    <appender-ref ref="stdout" />
+    <appender-ref ref="RFA" />
+  </root>
+
+</log4j:configuration>  
