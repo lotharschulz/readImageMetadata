@@ -1,3 +1,4 @@
+// sample code of blog post: http://www.lotharschulz.info/2012/01/09/read-image-meta-data-with-java/
 package info.lotharschulz;
 
 import org.apache.sanselan.ImageReadException;
