@@ -1,0 +1,89 @@
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,734 - [Jpeg] Compression Type - Baseline
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,739 - [Jpeg] Data Precision - 8 bits
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,742 - [Jpeg] Image Height - 200 pixels
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,742 - [Jpeg] Image Width - 300 pixels
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,743 - [Jpeg] Number of Components - 3
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,745 - [Jpeg] Component 1 - Y component: Quantization table 0, Sampling factors 2 horiz/2 vert
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,747 - [Jpeg] Component 2 - Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,749 - [Jpeg] Component 3 - Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,751 - [JpegComment] Jpeg Comment - Created with GIMP
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,751 - [Jfif] Version - 1.1
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,752 - [Jfif] Resolution Units - inch
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,754 - [Jfif] X Resolution - 72 dots
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:77) 11:25:19,755 - [Jfif] Y Resolution - 72 dots
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:83) 11:25:19,757 - directory: com.drew.metadata.jpeg.JpegDirectory@425743
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,761 -   tag: [Jpeg] Compression Type - Baseline
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,762 -   tag: [Jpeg] Data Precision - 8 bits
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,764 -   tag: [Jpeg] Image Height - 200 pixels
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,770 -   tag: [Jpeg] Image Width - 300 pixels
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,772 -   tag: [Jpeg] Number of Components - 3
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,773 -   tag: [Jpeg] Component 1 - Y component: Quantization table 0, Sampling factors 2 horiz/2 vert
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,789 -   tag: [Jpeg] Component 2 - Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,791 -   tag: [Jpeg] Component 3 - Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:83) 11:25:19,792 - directory: com.drew.metadata.jpeg.JpegCommentDirectory@1aacd5f
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,793 -   tag: [JpegComment] Jpeg Comment - Created with GIMP
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:83) 11:25:19,794 - directory: com.drew.metadata.jfif.JfifDirectory@913dc1
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,795 -   tag: [Jfif] Version - 1.1
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,796 -   tag: [Jfif] Resolution Units - inch
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,797 -   tag: [Jfif] X Resolution - 72 dots
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.main(App.java:87) 11:25:19,798 -   tag: [Jfif] Y Resolution - 72 dots
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.readImageIOMetadata(App.java:317) 11:25:19,987 - Format name: javax_imageio_jpeg_image_1.0
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.readImageIOMetadata(App.java:318) 11:25:19,990 - <javax_imageio_jpeg_image_1.0>
+<JPEGvariety>
+<app0JFIF majorVersion="1" minorVersion="1" resUnits="1" Xdensity="72" Ydensity="72" thumbWidth="0" thumbHeight="0"/>
+</JPEGvariety>
+<markerSequence>
+<com comment="Created with GIMP"/>
+<dqt>
+<dqtable elementPrecision="0" qtableId="0"/>
+</dqt>
+<dqt>
+<dqtable elementPrecision="0" qtableId="1"/>
+</dqt>
+<sof process="0" samplePrecision="8" numLines="200" samplesPerLine="300" numFrameComponents="3">
+<componentSpec componentId="1" HsamplingFactor="2" VsamplingFactor="2" QtableSelector="0"/>
+<componentSpec componentId="2" HsamplingFactor="1" VsamplingFactor="1" QtableSelector="1"/>
+<componentSpec componentId="3" HsamplingFactor="1" VsamplingFactor="1" QtableSelector="1"/>
+</sof>
+<dht>
+<dhtable class="0" htableId="0"/>
+</dht>
+<dht>
+<dhtable class="1" htableId="0"/>
+</dht>
+<dht>
+<dhtable class="0" htableId="1"/>
+</dht>
+<dht>
+<dhtable class="1" htableId="1"/>
+</dht>
+<sos numScanComponents="3" startSpectralSelection="0" endSpectralSelection="63" approxHigh="0" approxLow="0">
+<scanComponentSpec componentSelector="1" dcHuffTable="0" acHuffTable="0"/>
+<scanComponentSpec componentSelector="2" dcHuffTable="1" acHuffTable="1"/>
+<scanComponentSpec componentSelector="3" dcHuffTable="1" acHuffTable="1"/>
+</sos>
+</markerSequence>
+</javax_imageio_jpeg_image_1.0>
+
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.readImageIOMetadata(App.java:317) 11:25:19,993 - Format name: javax_imageio_1.0
+DEBUG info.lotharschulz.App.main()  info.lotharschulz.App.readImageIOMetadata(App.java:318) 11:25:19,995 - <javax_imageio_1.0>
+<Chroma>
+<ColorSpaceType name="YCbCr"/>
+<NumChannels value="3"/>
+</Chroma>
+<Compression>
+<CompressionTypeName value="JPEG"/>
+<Lossless value="false"/>
+<NumProgressiveScans value="1"/>
+</Compression>
+<Dimension>
+<PixelAspectRatio value="1.0"/>
+<ImageOrientation value="normal"/>
+<HorizontalPixelSize value="0.35277778"/>
+<VerticalPixelSize value="0.35277778"/>
+</Dimension>
+<Text>
+<TextEntry keyword="comment" value="Created with GIMP"/>
+</Text>
+</javax_imageio_1.0>
+
