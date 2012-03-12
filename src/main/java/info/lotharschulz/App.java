@@ -1,40 +1,34 @@
 package info.lotharschulz;
 
+import com.drew.imaging.ImageMetadataReader;
+import com.drew.imaging.ImageProcessingException;
+import com.drew.metadata.Directory;
+import com.drew.metadata.Metadata;
+import com.drew.metadata.Tag;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
+import javax.imageio.IIOImage;
+import javax.imageio.ImageIO;
+import javax.imageio.ImageReader;
+import javax.imageio.metadata.IIOMetadata;
+import javax.imageio.stream.ImageInputStream;
+import org.apache.log4j.Logger;
 import org.apache.sanselan.ImageReadException;
 import org.apache.sanselan.Sanselan;
 import org.apache.sanselan.common.IImageMetadata;
 import org.apache.sanselan.common.ImageMetadata.Item;
 import org.apache.sanselan.common.RationalNumber;
 import org.apache.sanselan.formats.jpeg.JpegImageMetadata;
+import org.apache.sanselan.formats.jpeg.JpegPhotoshopMetadata;
 import org.apache.sanselan.formats.tiff.TiffField;
+import org.apache.sanselan.formats.tiff.TiffImageData;
 import org.apache.sanselan.formats.tiff.TiffImageMetadata;
 import org.apache.sanselan.formats.tiff.constants.TagInfo;
 import org.apache.sanselan.formats.tiff.constants.TiffConstants;
-import org.apache.sanselan.formats.jpeg.JpegPhotoshopMetadata;
-import org.apache.sanselan.formats.tiff.TiffImageData;
-
-import com.drew.imaging.ImageMetadataReader;
-import com.drew.imaging.ImageProcessingException;
-import com.drew.metadata.Directory;
-import com.drew.metadata.Metadata;
-import com.drew.metadata.Tag;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-
-import java.util.Iterator;
-import java.util.List;
-
-import org.apache.log4j.Logger;
-
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.IIOImage;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.metadata.IIOMetadata;
-
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
@@ -84,7 +78,9 @@ public class App {
                 }
                 for (Tag tag : directory.getTags()) {
                     if (log.isDebugEnabled()) {
-                        log.debug("  tag: " + tag);
+                        log.debug("  tag: " + tag + "\n" + 
+                                  "  tag.getDescription: " + tag.getDescription() + "\n" + 
+                                  "  directory.getString(tag.getTagType(), \"UTF-8\"): " + directory.getString(tag.getTagType(), "UTF-8") + "\n" );
                     }
                 }
             }
@@ -281,7 +277,7 @@ public class App {
     }
 
     public static void readImageIOMetadata(String file) {
-        ImageInputStream iis = null;
+        ImageInputStream iis;
         boolean iisclosed = false;
         try {
             iis = ImageIO.createImageInputStream(new BufferedInputStream(new FileInputStream(file)));
